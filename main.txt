@@ -13,6 +13,14 @@
 - get commit history with
   - git log
 
+- get commit history of one file use
+  - git log -- "Filename"
+
+- simple view of git log
+  - git log --oneline --graph --decorate --all
+    - alias create for top so now we use
+    - git log history
+
 - get commit history and show info of changes use
   - git show
 
@@ -21,3 +29,12 @@
 
 - add a track file that is modified file use
   - git commit -am "Commit message"
+
+- unstage a file use
+  - git reset HEAD "filename"
+
+- revert to the last good state of a file use
+  - git checkout -- LICENSE.md
+
+- list out all the global variables we set use
+  - git config --global --list
