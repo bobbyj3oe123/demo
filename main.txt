@@ -38,3 +38,7 @@
 
 - list out all the global variables we set use
   - git config --global --list
+
+- rename a file saved with git use
+  - git mv "orginal file name" "new file name"
+  - git mv "example.txt" "demo.txt"
