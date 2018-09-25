@@ -46,3 +46,9 @@
 - it you want to remove a file in the git respository
   - git rm "filename"
   - git rm demo.txt
+
+- to add deletions not recognized by git since it red use
+  - git add -u
+
+- to add all modified files not recognized by git since it red use
+  - git add -A
