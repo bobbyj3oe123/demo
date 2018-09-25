@@ -42,3 +42,7 @@
 - rename a file saved with git use
   - git mv "orginal file name" "new file name"
   - git mv "example.txt" "demo.txt"
+
+- it you want to remove a file in the git respository
+  - git rm "filename"
+  - git rm demo.txt
