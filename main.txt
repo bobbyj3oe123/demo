@@ -1,0 +1,11 @@
+- local git states refer to image 1
+
+- git add moves files to the staging area
+
+- remove git repository from your project with
+  - rm -rf .git
+
+- you can add files to staging area also by git add 'filename'
+
+- can add commits without message inline but through the text editor with
+  - git commit
