@@ -9,3 +9,15 @@
 
 - can add commits without message inline but through the text editor with
   - git commit
+
+- get commit history with
+  - git log
+
+- get commit history and show info of changes use
+  - git show
+
+- find out which files git is tracking use
+  - git ls-files
+
+- add a track file that is modified file use
+  - git commit -am "Commit message"
