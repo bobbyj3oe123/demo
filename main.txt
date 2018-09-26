@@ -1,54 +1,47 @@
-- local git states refer to image 1
+- find the difference between two commit points use
+  - git diff "commit number" "commit number"
+  - git diff dbcfae3 HEAD
+    - if you want to use the p4merge tool use
+    - git difftool "commit number" "commit number"
+    - git difftool dbcfae3 HEAD
 
-- git add moves files to the staging area
+- if you want to see changes from current working directory which is master in this case against the head which is the last commit
+  - git diff
+  - git difftool
 
-- remove git repository from your project with
-  - rm -rf .git
+- branching
+  - timeline of commits
 
-- you can add files to staging area also by git add 'filename'
+- branch names are labels
 
-- can add commits without message inline but through the text editor with
-  - git commit
+- example of a branch different from the master refer to image 2
 
-- get commit history with
-  - git log
+- types of merges
+  - fast-forward
+    - simplest case
+    - no addition work is detected in the master branch
+    - merge the for example a feature branch to the master as if no feature branch ever existed
+      - so the feature branch is deleted
+      - refer to image 3
+  - automatic
+    - non-conflicting merge detected
+    - preverses both timelines
+    - so both branches are kept
+    - refer to image 4
+  - manual
+    - automatic merge not possible
+    - conflicting merge state
+    - changes saved in merge commit
+    - all prior merge conflict need to be resolved before a merge commit occurs
+    - refer to image 5
 
-- get commit history of one file use
-  - git log -- "Filename"
+- head points to the last commit of that branch
 
-- simple view of git log
-  - git log --oneline --graph --decorate --all
-    - alias create for top so now we use
-    - git log history
+- see all the branches you have git branch
 
-- get commit history and show info of changes use
-  - git show
+- if you want to create a branch and switch to it use
+  - git checkout -b 'name of the branch'
+  - git checkout -b updates
+  - unstage commits carry to the newly created branch
 
-- find out which files git is tracking use
-  - git ls-files
-
-- add a track file that is modified file use
-  - git commit -am "Commit message"
-
-- unstage a file use
-  - git reset HEAD "filename"
-
-- revert to the last good state of a file use
-  - git checkout -- LICENSE.md
-
-- list out all the global variables we set use
-  - git config --global --list
-
-- rename a file saved with git use
-  - git mv "orginal file name" "new file name"
-  - git mv "example.txt" "demo.txt"
-
-- it you want to remove a file in the git respository
-  - git rm "filename"
-  - git rm demo.txt
-
-- to add deletions not recognized by git since it red use
-  - git add -u
-
-- to add all modified files not recognized by git since it red use
-  - git add -A
+- 
