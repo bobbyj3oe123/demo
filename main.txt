@@ -62,5 +62,36 @@
   - git branch -d updates
 
 - causing a conflict is updating same part of the files on both branches
+  - when conflic appears use git mergetool to solve the conflict by choosing one of the available options
+  at the bottom of p4merge tool and saving it
 
-- 
+- add to gitignore .org files
+
+- mark this part of this repository by using git tags
+  - delete a tag
+    - git tag -d "tag name"
+    - git tag -d mytag
+  - see your tag names use
+    - git tag --list
+  - there are two types of tags
+    - light weight tags where you can just give a name
+      - git tag "tag name"
+      - git tag mytag
+    - annotated tags which means they have extra info associated with the tag
+      - git tag -a "tag name" -m "Commit message"
+      - git tag -a v1.0 -m "Release 1.0"
+
+- saved work in progress use
+  - git stash
+
+- bring the saved work progress back and apply those changes
+  - git stash pop
+
+- if you want to change the head is pointing to use
+  - it preverse the staging area and working directory
+  - effectively backout of our changes, make minor changes, and commit where head is pointing too
+  - git reset "id" --soft
+  - git reset 554db32 --soft
+
+- find out all the different actions taken when is this repository use
+  - git reflog
