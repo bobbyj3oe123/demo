@@ -44,4 +44,6 @@
   - git checkout -b updates
   - unstage commits carry to the newly created branch
 
-- 
+- if you want to see difference between branches than ids use
+  - git diff 'branch name' 'branch name'
+  - git diff updates master
