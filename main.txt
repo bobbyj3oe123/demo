@@ -60,3 +60,7 @@
 - delete a branch use
   - git branch -d "branch name"
   - git branch -d updates
+
+- causing a conflict is updating same part of the files on both branches
+
+- 
